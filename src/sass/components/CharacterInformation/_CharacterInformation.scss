@@ -1,0 +1,33 @@
+.c-character-information {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.c-border {
+  border: 2px dashed #c99d0f;
+  width: 50%;
+}
+
+
+.c-character-information__description {
+  font-size: 1.25rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.c-character-information__total {
+  font-weight: 700;
+  color: #00d9f7;
+  font-size: 1.3rem;
+}

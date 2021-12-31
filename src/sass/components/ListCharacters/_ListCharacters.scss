@@ -1,0 +1,32 @@
+.c-list-characters {
+  margin-top: 5rem;
+}
+
+.c-list-characters__cards {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  justify-items: start;
+  padding: 1.875rem;
+  align-items: center;
+}
+.c-list-characters__card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  height: auto;
+  width: 20rem;
+}
+
+.c-list-characters__image {
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  display: flex;
+  flex: 5;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}

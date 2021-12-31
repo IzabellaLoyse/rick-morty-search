@@ -1,0 +1,35 @@
+.c-container-search {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  &__input {
+    background-color: hsl(0, 6%, 94%);
+    border-radius: 0.8rem;
+    border: none;
+    color: hsl(0, 5%, 12%);
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 3rem;
+    padding: 0.8rem 1.8rem;
+    width: 60%;
+
+    &:focus {
+      outline: #c99d0f dashed 2px;
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    height: 2rem;
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+  }
+}
