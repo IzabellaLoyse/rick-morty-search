@@ -22,14 +22,20 @@
       outline: #c99d0f dashed 2px;
     }
   }
+}
+.c-container-search__button {
+  position: absolute;
+  right: 22%;
+  top: 5%;
+  width: 3rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  &__icon {
-    cursor: pointer;
-    height: 2rem;
-    position: absolute;
-    right: 22%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2rem;
-  }
+.c-container-search__icon {
+  cursor: pointer;
+  height: 2rem;
+  transform: translateY(10%);
+  width: 2rem;
 }

@@ -16,6 +16,7 @@
   </head>
 
   <body>
+
     <header class="c-header">
       <img
         class="c-header__image"
@@ -25,6 +26,7 @@
     </header>
 
     <main class="l-container-layout">
+      
       <section class="c-container-search">
         <label class="sr-only" for="search">Encontre um personagem</label>
         <input
@@ -34,11 +36,13 @@
           role="search"
           placeholder="Encontre um personagem"
         />
-        <img
-          class="c-container-search__icon"
-          src="./src/assets/icon/search.png"
-          alt="Icone de Lupa"
-        />
+        <button class="c-container-search__button js-btn-search">
+          <img
+            class="c-container-search__icon"
+            src="./src/assets/icon/search.png"
+            alt="Icone de Lupa"
+          />
+        </button>
       </section>
 
       <div class="c-character-information">
@@ -54,6 +58,14 @@
 
       <section class="c-list-characters">
         <ul class="c-list-characters__cards js-list-characters"></ul>
+      </section>
+
+      <section class="c-list-characters">
+        <ul
+          class="
+            c-list-characters__cards is-list-characters--hidden
+            js-list-search-characters">
+        </ul>
       </section>
     </main>
 
