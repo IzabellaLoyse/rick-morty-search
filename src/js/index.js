@@ -33,10 +33,11 @@ const insertListIntoHTML = (data, list) => {
 
       <article class="c-list-characters__content">
         <h3 class="c-character__name">${name}</h3>
-        <p class="c-character__status js-character-status">${status}</p>
-        <p class="js-character-species">${species}</p>
-        <p class="js-character-species">${gender}</p>
-        <p class="js-character-species">${origin.name}</p>
+        <p class="c-character__info is-character__info--status 
+        js-character-status">${status}</p>
+        <p class="c-character__info">${species}</p>
+        <p class="c-character__info">${gender}</p>
+        <p class="c-character__info">${origin.name}</p>
       </article>
       </li>
       `,
@@ -89,3 +90,9 @@ const searchCharacter = async () => {
 document.querySelector('.js-btn-search').addEventListener('click', () => {
   searchCharacter();
 });
+
+document
+  .querySelector('.js-search-input')
+  .addEventListener('keyup', (event) => {
+    if (event.keyCode === 13) searchCharacter();
+  });
