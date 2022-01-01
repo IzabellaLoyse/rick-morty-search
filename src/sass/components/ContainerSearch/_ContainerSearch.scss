@@ -8,29 +8,45 @@
   width: 100%;
 
   &__input {
-    background-color: map-get($theme-colors , 'quartenary-color');
+    background-color: map-get($theme-colors, 'quartenary-color');
     border-radius: 12.8px;
     border: none;
-    color: map-get($theme-colors , 'fifth-color');
+    color: map-get($theme-colors, 'fifth-color');
     font-size: 1.3rem;
     font-weight: map-get($font-weight, 'medium');
     height: 3rem;
     padding: 0.8rem 1.8rem;
-    width: 60%;
+    width: 50%;
+
+    @include breakpoint(medium-only) {
+      font-size: 1rem;
+      width: 20rem;
+    }
 
     &:focus {
-      outline: dashed 2px map-get($theme-colors , 'tertiary-color');
+      outline: dashed 2px map-get($theme-colors, 'tertiary-color');
     }
   }
 }
+
 .c-container-search__button {
-  position: absolute;
-  right: 22%;
-  top: 5%;
-  width: 3rem;
-  border: none;
   background-color: transparent;
+  border: none;
   cursor: pointer;
+  display: table;
+  height: 2rem;
+  position: absolute;
+  right: 25%;
+  top: 10%;
+  width: 3rem;
+
+  @include breakpoint(medium-only) {
+    right: 26.5%;
+  }
+
+  @include breakpoint(small-only) {
+    display: none;
+  }
 }
 
 .c-container-search__icon {
