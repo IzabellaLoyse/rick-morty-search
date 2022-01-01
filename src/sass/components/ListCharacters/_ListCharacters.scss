@@ -3,27 +3,28 @@
 }
 
 .c-list-characters__cards {
+  align-items: center;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
   justify-items: start;
   padding: 1.875rem;
-  align-items: center;
 }
 .c-list-characters__card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 6px;
+  background-color: map-get($theme-colors, 'primary-color');
+  border-radius: $global-border-radius;
+  box-shadow: 4px 4px 6px map-get($theme-colors, 'shadow-color');
   display: flex;
   flex-direction: column;
-  min-height: 10rem;
   height: auto;
+  min-height: 10rem;
   width: 20rem;
 }
 
 .c-list-characters__image {
   align-items: center;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: $global-border-radius;
+  border-top-right-radius: $global-border-radius;
   display: flex;
   flex: 5;
   justify-content: center;
@@ -32,23 +33,29 @@
 }
 
 .c-list-characters__content {
-  padding: 0.5rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   flex: 1;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
 .c-character__name {
+  color: map-get($theme-colors, 'fifth-color');
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: map-get($font-weight, 'bold');
+  letter-spacing: 0.1rem;
 }
 
-.c-character__status {
-  font-size: 1rem;
-  font-weight: 500;
+.c-character__info {
+  color: map-get($theme-colors, 'fifth-color');
+  font-size: 1.1rem;
+  font-weight: map-get($font-weight, 'medium');
+}
+
+.is-character__info--status {
+  color: map-get($theme-colors, 'tertiary-color');
 }
 
 .is-list-characters--hidden {

@@ -1,0 +1,23 @@
+/*----- COLOR PALETTE -----*/
+
+$theme-colors: (
+  'main-color': rgb(19, 93, 81),
+  'primary-color': rgb(255, 255, 255),
+  'secondary-color': rgb(0, 217, 247),
+  'tertiary-color': rgb(201, 157, 15),
+  'quaternary-color': rgb(241, 239, 239),
+  'fifth-color': rgb(32, 29, 29),
+  'shadow-color': rgba(0, 0, 0, 0.25),
+);
+
+/*----- MEASURES -----*/
+
+$global-border-radius: 6px;
+
+/*----- TYPOGRAPHY-----*/
+
+$font-weight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
