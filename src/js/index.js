@@ -33,7 +33,7 @@ const insertListIntoHTML = (data, list) => {
 
       <article class="c-list-characters__content">
         <h3 class="c-character__name">${name}</h3>
-        <p class="c-character__info is-character__info--status 
+        <p class="c-character__info is-character__info--status
         js-character-status">${status}</p>
         <p class="c-character__info">${species}</p>
         <p class="c-character__info">${gender}</p>
